@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" version="11.40">
+	<children>
+		<child name="PivotGrid" key="{064C71E9-6BEB-48EE-BFDE-F54690ECFBA9}" path="PivotGrid.sd" />
+		<child name="Redactor" key="{66CCB289-0E2E-44F9-9154-AA095FD7CCD8}" path="Redactor.sd" />
+		<child name="TreeList" key="{8BB90EA7-E833-4EBD-BE4D-04E1F4BEC899}" path="TreeList.sd" />
+	</children>
+</Root>

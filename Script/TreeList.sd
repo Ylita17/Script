@@ -1,0 +1,37 @@
+﻿procedure TreeList;
+begin
+  //Unable to convert the operation:
+  //Operation: Start Video Recording
+  //Plug-in: VideoRecorder (Version: 1.0, SmartBear Software)
+  //Runs the "TestEnvironment_TD32" tested application.
+  TestedApps.TestEnvironment_TD32.Run(1, true);
+  //Maximizes the 'FMain' window.
+  Aliases.TestEnvironment_TD32_.FMain.Maximize;
+  //Clicks the 'dxRibbonTab1|[0]|Форма с TreeList' item of the 'dxRibbon' bar.
+  Aliases.TestEnvironment_TD32_.FMain.dxRibbon.ClickItemXY('dxRibbonTab1|[0]|Форма с TreeList', 69, 15);
+  //Collapses the 2 row of the 'wChildView[1]' tree list.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FTreeList.tlTest.wChildView[1].Collapse(2);
+  //Collapses the 1 row of the 'tlTest' tree list.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FTreeList.tlTest.Collapse(1);
+  //Rotates the mouse wheel to -5 over the 'tlTest' object.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FTreeList.tlTest.MouseWheel(-5);
+  //Clicks the 'wChildView[2]' grid cell at row 1, column 'name'.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FTreeList.tlTest.wChildView[3].wChildView[2].ClickCell(1, 'name');
+  //Enters the text '123' in the 'TcxCustomInnerTextEdit' text editor.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FTreeList.tlTest.TcxMaskEdit.TcxCustomInnerTextEdit.SetText('123');
+  //Rotates the mouse wheel to 1 over the 'TcxCustomInnerTextEdit' object.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FTreeList.tlTest.TcxMaskEdit.TcxCustomInnerTextEdit.MouseWheel(1);
+  //Expands the 1 row of the 'tlTest' tree list.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FTreeList.tlTest.Expand(1);
+  //Expands the 2 row of the 'wChildView[1]' tree list.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FTreeList.tlTest.wChildView[1].Expand(2);
+  //Clicks the 'wChildView[2]' grid cell at row 0, column 'name'.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FTreeList.tlTest.wChildView[1].wChildView[2].ClickCell(0, 'name');
+  //Enters the text '' in the 'TcxCustomInnerTextEdit' text editor.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.FTreeList.tlTest.TcxMaskEdit2.TcxCustomInnerTextEdit.SetText('');
+  //Clicks the 'MDIClient' object.
+  Aliases.TestEnvironment_TD32_.FMain.MDIClient.Click(147, 632);
+  //Unable to convert the operation:
+  //Operation: Stop Video Recording
+  //Plug-in: VideoRecorder (Version: 1.0, SmartBear Software)
+end;
